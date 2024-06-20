@@ -1,0 +1,15 @@
+@import './variables';
+
+body {
+  background-color: $blue-intense;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 1080px;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0 auto;
+}

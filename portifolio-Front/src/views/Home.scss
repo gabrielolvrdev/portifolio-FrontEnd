@@ -1,0 +1,105 @@
+@import '../assets/main/main.scss';
+
+.contentHome {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.listHome {
+  display: flex;
+  list-style-type: none;
+  gap: 98px;
+  padding: 0;
+}
+
+.liHome {
+  display: flex;
+}
+
+.textHome {
+  color: $white;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.contentImgHome {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+// section Begin
+
+.sectionBegin {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+}
+
+.titleSection {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+.textBegin {
+  color: #bcbcbc;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 750px;
+}
+.contentBegin {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.paragraphBegin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttonBegin {
+  border-radius: 83px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  height: 50px;
+  width: 200px;
+  border: none;
+  color: $white;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.imgDeveloper {
+  width: 300px;
+}
+.contentParagraphBegin {
+  display: flex;
+  gap: 20px;
+}
+
+.contentButtonBegin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sectionProjects {
+  display: flex;
+  flex-direction: column;
+}
