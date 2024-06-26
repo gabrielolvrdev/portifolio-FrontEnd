@@ -1,0 +1,27 @@
+@import '../../assets/main/main.scss';
+
+.barraProgress {
+  border-radius: 83px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  width: 100%;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.barraFullProgress {
+  border-radius: 83px;
+  background: #162950;
+  width: 100%;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.textTechnologie {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}

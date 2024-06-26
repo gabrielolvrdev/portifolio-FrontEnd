@@ -1,0 +1,53 @@
+@import '../../assets/main/main.scss';
+
+.cardProject {
+  width: 300px;
+  height: 400px;
+  border-radius: 50px 0px;
+  background: #0f1624;
+  box-shadow: 0px 0px 12px 0px #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-top: 20px;
+}
+.contentTextProject {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.imageProject {
+  border-radius: 4px;
+  background-image: url(../../../public/imageProject.png);
+  height: 120px;
+  width: 270px;
+  object-fit: cover;
+}
+
+.titleProject {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 88.5%;
+  margin: 0px;
+}
+
+.textProject {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+}
+
+.barraproject {
+  width: 200px;
+  height: 10px;
+  border-radius: 83px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+}
