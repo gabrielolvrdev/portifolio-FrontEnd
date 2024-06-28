@@ -31,6 +31,10 @@
   align-items: center;
   gap: 8px;
 }
+.contentTitleProjects {
+  display: flex;
+  align-items: flex-start;
+}
 
 // section Begin
 
@@ -103,16 +107,16 @@
 .sectionProjects {
   display: flex;
   flex-direction: column;
-  height: 650px;
   gap: 20px;
+  align-items: center;
 }
 
 .contentProjects {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  height: 100vh;
+  gap: 80px;
 }
 
 .contentButtomLoadMore {
@@ -183,4 +187,23 @@
 .contentPerfil {
   display: flex;
   gap: 20px;
+}
+
+.contentFooter {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1111px) {
+  .titleSection {
+    font-size: 24px;
+  }
+  .paragraphBegin {
+    width: 500px;
+  }
+  .contentBegin {
+    align-items: center;
+  }
 }

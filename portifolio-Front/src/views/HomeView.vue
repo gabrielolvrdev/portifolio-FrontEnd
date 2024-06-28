@@ -52,7 +52,7 @@ import './Home.scss'
       </div>
     </section>
     <section class="sectionProjects">
-      <div>
+      <div class="contentTitleProjects">
         <p class="titleSection">Projects</p>
       </div>
       <div class="contentProjects">
@@ -63,6 +63,10 @@ import './Home.scss'
         <CardComponent
           title="Landing Page"
           subtitle="Projeto de landing Pages feitas com componentes próprios para uso educacional"
+        ></CardComponent>
+        <CardComponent
+          title="Conselho Biblico"
+          subtitle="Conselhos Biblicos é um projeto voltado a pessoas que estão passando por uma situação e querem uma explicação biblica para isso"
         ></CardComponent>
         <CardComponent
           title="Conselho Biblico"
@@ -114,5 +118,12 @@ import './Home.scss'
       </div>
       <div class="barAboutMe"></div>
     </section>
+    <footer class="contentFooter">
+      <p class="textBegin">Email: gogabriel35@gmail.com</p>
+      <div>
+        <img src="../../public/Linkedin.png" />
+        <img src="../../public/github.svg" />
+      </div>
+    </footer>
   </main>
 </template>
