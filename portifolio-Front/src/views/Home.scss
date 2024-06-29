@@ -2,7 +2,8 @@
 
 .contentHome {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
 }
 
@@ -15,6 +16,10 @@
 
 .liHome {
   display: flex;
+}
+
+.styleProgress {
+  width: 100%;
 }
 
 .textHome {
@@ -41,6 +46,7 @@
 .sectionBegin {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 600px;
   justify-content: center;
 }
@@ -68,6 +74,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 900px;
   height: 100vh;
 }
 
@@ -97,6 +104,7 @@
 .contentParagraphBegin {
   display: flex;
   gap: 20px;
+  width: 900px;
 }
 
 .contentButtonBegin {
@@ -107,7 +115,7 @@
 .sectionProjects {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -153,7 +161,6 @@
 }
 
 .barAboutMe {
-  width: 1080px;
   height: 12px;
   flex-shrink: 0;
   background: #fff;
@@ -192,18 +199,174 @@
 .contentFooter {
   display: flex;
   height: 100vh;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
+}
+
+.contentTextAboutMe {
+  width: 900px;
 }
 
 @media (max-width: 1111px) {
   .titleSection {
     font-size: 24px;
   }
+  // .paragraphBegin {
+  //   width: 500px;
+  // }
+  .contentBegin {
+    align-items: center;
+  }
+  .styleProgress {
+    width: 600px;
+  }
+  .sectionTechnologies {
+    display: flex;
+    align-items: center;
+  }
+  .contentHome {
+    justify-content: center;
+  }
+  .contentSkills {
+    align-items: center;
+    gap: 40px;
+  }
+  .aboutMe {
+    align-items: center;
+  }
+  .contentPerfil {
+    align-items: center;
+    justify-content: center;
+  }
+  .contentTextAboutMe {
+    width: 600px;
+  }
+  .contentFooter {
+    justify-content: center;
+    gap: 20px;
+  }
+  .barAboutMe {
+    width: 100%;
+  }
+}
+@media (max-width: 930px) {
+  .imgDeveloper {
+    display: none;
+  }
+  .contentParagraphBegin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+  }
+  .textHome {
+    font-size: 16px;
+  }
   .paragraphBegin {
+    width: 600px;
+  }
+  .contentBegin {
+    width: 600px;
+  }
+}
+@media (max-width: 740px) {
+  .contentProjects {
+    gap: 40px;
+  }
+  .listHome {
+    gap: 60px;
+  }
+}
+@media (max-width: 674px) {
+  .paragraphBegin {
+    width: 100%;
+  }
+  .contentParagraphBegin {
+    width: 500px;
+  }
+  .cardProject {
+    width: 250px;
+    height: 350px;
+  }
+  .imageProject {
+    width: 220px;
+  }
+}
+@media (max-width: 600px) {
+  .contentProjects {
+    display: flex;
+    flex-direction: column;
+  }
+  .barraFullProgress {
+    width: 500px;
+  }
+  .styleProgress {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .textBegin {
+    font-size: 16px;
+  }
+  .contentTextAboutMe {
     width: 500px;
   }
   .contentBegin {
-    align-items: center;
+    width: 400px;
+  }
+  .listHome {
+    gap: 20px;
+  }
+  .imgGithub {
+    width: 20px;
+  }
+  .imgGithub {
+    width: 20px;
+  }
+  .titleProject {
+    font-size: 18px;
+  }
+}
+@media (max-width: 510px) {
+  .barraFullProgress {
+    width: 400px;
+  }
+  .contentParagraphBegin {
+    width: 400px;
+  }
+  .contentTextAboutMe {
+    width: 400px;
+  }
+  .listHome {
+    gap: 8px;
+  }
+  .textHome {
+    font-size: 12px;
+  }
+  .contentBegin {
+    height: 50vh;
+  }
+}
+@media (max-width: 410px) {
+  .barraFullProgress {
+    width: 300px;
+  }
+  .contentParagraphBegin {
+    width: 300px;
+  }
+  .contentTextAboutMe {
+    width: 350px;
+  }
+  .contentBegin {
+    width: 300px;
+  }
+  .titleSection {
+    font-size: 18px;
+  }
+  .textBegin {
+    font-size: 12px;
   }
 }

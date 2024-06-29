@@ -24,10 +24,10 @@ import './Home.scss'
         </ul>
         <div class="contentImgHome">
           <a href="https://github.com/gabrielolvrdev">
-            <img src="/github.svg" />
+            <img class="imgGithub" src="/github.svg" />
           </a>
           <a href="https://www.linkedin.com/in/gabriel-oliveira-86b346255/">
-            <img src="/Linkedin.png" />
+            <img class="imgGithub" src="/Linkedin.png" />
           </a>
         </div>
       </div>
@@ -76,13 +76,41 @@ import './Home.scss'
     </section>
     <section class="sectionTechnologies">
       <p class="titleSection">Technologies</p>
-      <ProgressComponent :progress="99" titleProgress="HTML"></ProgressComponent>
-      <ProgressComponent :progress="95" titleProgress="CSS"></ProgressComponent>
-      <ProgressComponent :progress="70" titleProgress="JavaScript"></ProgressComponent>
-      <ProgressComponent :progress="65" titleProgress="Vuejs"></ProgressComponent>
-      <ProgressComponent :progress="40" titleProgress="RubyOnRails"></ProgressComponent>
-      <ProgressComponent :progress="65" titleProgress="Saas"></ProgressComponent>
-      <ProgressComponent :progress="70" titleProgress="TypeScript"></ProgressComponent>
+      <ProgressComponent
+        class="styleProgress"
+        :progress="99"
+        titleProgress="HTML"
+      ></ProgressComponent>
+      <ProgressComponent
+        class="styleProgress"
+        :progress="95"
+        titleProgress="CSS"
+      ></ProgressComponent>
+      <ProgressComponent
+        class="styleProgress"
+        :progress="70"
+        titleProgress="JavaScript"
+      ></ProgressComponent>
+      <ProgressComponent
+        class="styleProgress"
+        :progress="65"
+        titleProgress="Vuejs"
+      ></ProgressComponent>
+      <ProgressComponent
+        class="styleProgress"
+        :progress="40"
+        titleProgress="RubyOnRails"
+      ></ProgressComponent>
+      <ProgressComponent
+        class="styleProgress"
+        :progress="65"
+        titleProgress="Saas"
+      ></ProgressComponent>
+      <ProgressComponent
+        class="styleProgress"
+        :progress="70"
+        titleProgress="TypeScript"
+      ></ProgressComponent>
     </section>
     <section>
       <div class="contentSkills">
@@ -108,13 +136,13 @@ import './Home.scss'
             <p class="textBegin">Desenvolvedor Front end</p>
           </div>
         </div>
-
-        <p class="textBegin">
-          Apaixonado por tecnologia desde muito cedo, concentrei meus estudos e forças para me
-          posicionar no mercado de trabalho como alguém que sempre busca soluções que contribuam
-          para o bem-estar de todos e também contribuir para uma melhor interação na equipe.
-        </p>
-        <!-- <img class="imageCv" src="../../public/cv2.png" /> -->
+        <div class="contentTextAboutMe">
+          <p class="textBegin">
+            Apaixonado por tecnologia desde muito cedo, concentrei meus estudos e forças para me
+            posicionar no mercado de trabalho como alguém que sempre busca soluções que contribuam
+            para o bem-estar de todos e também contribuir para uma melhor interação na equipe.
+          </p>
+        </div>
       </div>
       <div class="barAboutMe"></div>
     </section>
