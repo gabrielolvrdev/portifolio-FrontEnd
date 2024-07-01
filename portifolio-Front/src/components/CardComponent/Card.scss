@@ -4,8 +4,8 @@
   width: 300px;
   height: 400px;
   border-radius: 50px 0px;
-  background: #0f1624;
-  box-shadow: 0px 0px 12px 0px #fff;
+  background: $azul-Escuro2;
+  box-shadow: 0px 0px 12px 0px $white;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -26,7 +26,7 @@
 }
 
 .titleProject {
-  color: #fff;
+  color: $white;
   font-family: Poppins;
   font-size: 24px;
   font-style: normal;
@@ -36,7 +36,7 @@
 }
 
 .textProject {
-  color: #fff;
+  color: $white;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;

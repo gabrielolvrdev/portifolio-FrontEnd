@@ -2,6 +2,27 @@
 import CardComponent from '@/components/CardComponent/CardComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent/ProgressComponent.vue'
 import './Home.scss'
+
+function clickProjects() {
+  const projectsSection = document.getElementById('projects')
+  if (projectsSection) {
+    projectsSection.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
+function clicktechnologies() {
+  const techonologiesSection = document.getElementById('technologies')
+  if (techonologiesSection) {
+    techonologiesSection.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
+function clickAboutMe() {
+  const aboutMeSection = document.getElementById('aboutMe')
+  if (aboutMeSection) {
+    aboutMeSection.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 </script>
 
 <template>
@@ -10,16 +31,13 @@ import './Home.scss'
       <div class="contentHome">
         <ul class="listHome">
           <li class="liHome">
-            <a class="textHome">Portifólio</a>
+            <a class="textHome" @click="clickProjects"> Projetos</a>
           </li>
           <li class="liHome">
-            <a class="textHome"> Projects</a>
+            <a class="textHome" @click="clicktechnologies">Tecnologias</a>
           </li>
           <li class="liHome">
-            <a class="textHome">Technologies</a>
-          </li>
-          <li class="liHome">
-            <a class="textHome">About me</a>
+            <a class="textHome" @click="clickAboutMe">Quem sou eu</a>
           </li>
         </ul>
         <div class="contentImgHome">
@@ -44,7 +62,7 @@ import './Home.scss'
               à vontade para entrar em contato!
             </p>
             <div class="contentButtonBegin">
-              <button class="buttonBegin">lets bora</button>
+              <button class="buttonBegin" @click="clickProjects">Ok!</button>
             </div>
           </div>
           <img class="imgDeveloper" src="/developer.png" />
@@ -53,7 +71,7 @@ import './Home.scss'
     </section>
     <section class="sectionProjects">
       <div class="contentTitleProjects">
-        <p class="titleSection">Projects</p>
+        <p class="titleSection" id="projects">Projetos</p>
       </div>
       <div class="contentProjects">
         <CardComponent
@@ -69,13 +87,13 @@ import './Home.scss'
           subtitle="Conselhos Biblicos é um projeto voltado a pessoas que estão passando por uma situação e querem uma explicação biblica para isso"
         ></CardComponent>
         <CardComponent
-          title="Conselho Biblico"
-          subtitle="Conselhos Biblicos é um projeto voltado a pessoas que estão passando por uma situação e querem uma explicação biblica para isso"
+          title="Pet Tranquilo"
+          subtitle="Projeto voltado para tutores que querem dicas e tirar dúvidas sobre o dia a dia de seus Pets!"
         ></CardComponent>
       </div>
     </section>
     <section class="sectionTechnologies">
-      <p class="titleSection">Technologies</p>
+      <p class="titleSection" id="technologies">Tecnologias</p>
       <ProgressComponent
         class="styleProgress"
         :progress="99"
@@ -123,9 +141,9 @@ import './Home.scss'
         </ul>
       </div>
     </section>
-    <section class="aboutMe">
-      <p class="titleSection">About Me</p>
+    <section class="aboutMe" id="aboutMe">
       <div class="barAboutMe"></div>
+      <p class="titleSection">Quem Sou Eu</p>
       <div>
         <div class="contentPerfil">
           <div class="contentPhotoPerfil">
@@ -148,9 +166,13 @@ import './Home.scss'
     </section>
     <footer class="contentFooter">
       <p class="textBegin">Email: gogabriel35@gmail.com</p>
-      <div>
-        <img src="../../public/Linkedin.png" />
-        <img src="../../public/github.svg" />
+      <div class="contentImgHome">
+        <a href="https://github.com/gabrielolvrdev">
+          <img src="../../public/Linkedin.png" />
+        </a>
+        <a href="https://www.linkedin.com/in/gabriel-oliveira-86b346255/">
+          <img src="../../public/github.svg" />
+        </a>
       </div>
     </footer>
   </main>

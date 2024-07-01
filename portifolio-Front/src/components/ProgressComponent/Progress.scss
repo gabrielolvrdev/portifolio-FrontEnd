@@ -10,14 +10,14 @@
 
 .barraFullProgress {
   border-radius: 83px;
-  background: #162950;
+  background: $azulEscuro;
   width: 100%;
   height: 20px;
   flex-shrink: 0;
 }
 
 .textTechnologie {
-  color: #fff;
+  color: $white;
   font-family: Poppins;
   font-size: 12px;
   font-style: normal;
